@@ -1,0 +1,83 @@
+body {
+  background-color: black; }
+
+.counter-sandwich {
+  display: none; }
+
+#overlay {
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  background-color: transparent; }
+
+#howManyContainer {
+  position: relative;
+  font-family: 'Courier', monospaced;
+  color: #7F5119;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  #howManyContainer #header {
+    max-width: 500px;
+    background: rgba(255, 243, 174, 0.7);
+    padding: 10px 15px;
+    margin: 10px;
+    border: 0px solid #7F5119;
+    text-align: center; }
+    #howManyContainer #header h1 {
+      font-size: 2em;
+      line-height: 1em;
+      margin: 0; }
+    #howManyContainer #header h2 {
+      margin: 0; }
+    #howManyContainer #header h1, #howManyContainer #header h2 {
+      padding: 0;
+      background-color: transparent; }
+    #howManyContainer #header p {
+      margin-bottom: 10px; }
+    #howManyContainer #header #total {
+      margin: 0px 0 0 -10px;
+      font-size: 6em; }
+    #howManyContainer #header #counter {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      #howManyContainer #header #counter .animal {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        #howManyContainer #header #counter .animal img {
+          max-height: 20px;
+          margin: 0 5px 0 10px; }
+
+@media (max-width: 900px) {
+  #sidebar #header {
+    max-width: 250px; }
+    #sidebar #header h1, #sidebar #header h2 {
+      font-size: 1em;
+      line-height: 1em; }
+    #sidebar #header #total {
+      font-size: 2em;
+      margin: 5px 0; } }
